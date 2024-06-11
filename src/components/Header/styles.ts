@@ -21,7 +21,6 @@ export const Content = styled.div`
         padding: 0 2rem;
         border-radius: 0.25rem;
         height: 3rem;
-
         transition: filter 0.2s;
 
         &:hover {
@@ -32,8 +31,8 @@ export const Content = styled.div`
     .title {
         font-size: 2rem;
         color: #FFF;
-        margin-left: -750px;
-        width: 7%;
+        margin-left: -47rem;
+        width: auto;
     }
 `;
 
@@ -49,8 +48,8 @@ export const Content2 = styled.div`
         padding: 0 2rem;
         border-radius: 0.25rem;
         height: 3rem;
-        margin-left: 680px;
-        margin-top: -460px;
+        margin-left: 42.5rem;
+        margin-top: -28.5rem;
 
     &:hover {
         filter: brightness(0.9);
@@ -70,8 +69,8 @@ export const Content3 = styled.div`
         padding: 0 2rem;
         border-radius: 0.25rem;
         height: 3rem;
-        margin-left: 360px;
-        margin-top: -460px;
+        margin-left: 22rem;
+        margin-top: -28.5rem;
 
     &:hover {
         filter: brightness(0.9);
