@@ -27,7 +27,7 @@ export const Container = styled.div`
             border: 0;
             background-color: var(--blue-light);
             text-align: center;
-            color: var(--blue);
+            color: #646D7E;
             border-radius: 0.25rem;
         }
     }
