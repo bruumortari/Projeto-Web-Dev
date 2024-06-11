@@ -37,6 +37,8 @@ export const Content = styled.div`
 `;
 
 export const Content2 = styled.div`
+    max-width: 1120px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
 
@@ -48,7 +50,7 @@ export const Content2 = styled.div`
         padding: 0 2rem;
         border-radius: 0.25rem;
         height: 3rem;
-        margin-left: 42.5rem;
+        margin-left: 40rem;
         margin-top: -28.5rem;
 
     &:hover {
@@ -58,8 +60,11 @@ export const Content2 = styled.div`
 `
 
 export const Content3 = styled.div`
-    display: flex;
-    align-items: center;
+max-width: 1120px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+
 
     .minhaEstante {
         font-size: 1rem;
@@ -76,8 +81,3 @@ export const Content3 = styled.div`
         filter: brightness(0.9);
     }
 }
-`
-
-
-
-
