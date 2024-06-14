@@ -4,6 +4,7 @@ import livro2Img from '../../assets/Livro2.svg'
 import livro3Img from '../../assets/Livro3.svg'
 import livro4Img from '../../assets/Livro4.svg'
 import livro5Img from '../../assets/Livro5.svg'
+import React from "react";
 
 export function Summary() {
     return (
