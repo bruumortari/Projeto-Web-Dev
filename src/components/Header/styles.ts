@@ -2,16 +2,50 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
     background: var(--blue);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 50vh;
+
+    .header-container {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 80%;
+        height: 100%;
+
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 2rem;
+        color: #FFF;
+    }
+
+    .menu {
+        width: 60vw;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .button {
+        height: 3rem;
+    }
 `;
 
 export const Content = styled.div`
-    max-width: 1120px;
-    margin: 0 auto;
-
-    padding: 2rem 1rem 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     .minhaConta {
         font-size: 1rem;
@@ -20,27 +54,16 @@ export const Content = styled.div`
         border: 0;
         padding: 0 2rem;
         border-radius: 0.25rem;
-        height: 3rem;
         transition: filter 0.2s;
 
         &:hover {
             filter: brightness(0.9);
         }
     }
-
-    .title {
-        font-size: 2rem;
-        color: #FFF;
-        margin-left: -47rem;
-        width: auto;
-    }
 `;
 
 export const Content2 = styled.div`
-    max-width: 1120px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+
 
     .recs {
         font-size: 1rem;
@@ -49,9 +72,6 @@ export const Content2 = styled.div`
         border: 0;
         padding: 0 2rem;
         border-radius: 0.25rem;
-        height: 3rem;
-        margin-left: 40rem;
-        margin-top: -28.5rem;
 
     &:hover {
         filter: brightness(0.9);
@@ -60,11 +80,6 @@ export const Content2 = styled.div`
 `
 
 export const Content3 = styled.div`
-max-width: 1120px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-
 
     .minhaEstante {
         font-size: 1rem;
@@ -73,9 +88,22 @@ align-items: center;
         border: 0;
         padding: 0 2rem;
         border-radius: 0.25rem;
-        height: 3rem;
-        margin-left: 22rem;
-        margin-top: -28.5rem;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+}
+`
+
+export const Content4 = styled.div`
+
+    .busca {
+        font-size: 1rem;
+        color: var(--blue);
+        background: var(--blue-light);
+        border: 0;
+        padding: 0 2rem;
+        border-radius: 0.25rem;
 
     &:hover {
         filter: brightness(0.9);

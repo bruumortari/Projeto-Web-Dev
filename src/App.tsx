@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import { useState } from "react";
 import { UserModal } from "./components/UserModal";
 import { RecsModal } from "./components/RecsModal";
+import { BuscaModal } from "./components/BuscaModal";
 
 Modal.setAppElement('#root');
 
@@ -12,6 +13,7 @@ export function App() {
 
   const [isUserModalOpen, setIsUserModalOpen] = useState(false);
   const [isRecsModalOpen, setIsRecsModalOpen] = useState(false);
+  const [isBuscaModalOpen, setIsBuscaModalOpen] = useState(false);
 
   function handleOpenUserModal() {
       setIsUserModalOpen(true);
@@ -23,15 +25,23 @@ export function App() {
 
   function handleOpenRecsModal() {
     setIsRecsModalOpen(true);
-}
+  }
 
-function handleCloseRecsModal() {
-    setIsRecsModalOpen(false);
-}
+  function handleCloseRecsModal() {
+      setIsRecsModalOpen(false);
+  }
+
+  function handleOpenBuscaModal() {
+    setIsBuscaModalOpen(true);
+  }
+
+  function handleCloseBuscaModal() {
+      setIsBuscaModalOpen(false);
+  }
 
   return (
     <>
-      <Header onOpenUserModal={handleOpenUserModal} onOpenRecsModal={handleOpenRecsModal} />
+      <Header onOpenUserModal={handleOpenUserModal} onOpenRecsModal={handleOpenRecsModal} onOpenBuscaModal={handleOpenBuscaModal}/>
       <Dashboard />
       <UserModal 
         isOpen={isUserModalOpen}
@@ -40,6 +50,10 @@ function handleCloseRecsModal() {
       <RecsModal 
         isOpen={isRecsModalOpen}
         onRequestClose={handleCloseRecsModal}
+      />
+      <BuscaModal 
+        isOpen={isBuscaModalOpen}
+        onRequestClose={handleCloseBuscaModal}
       />
       <GlobalStyle />
     </>
